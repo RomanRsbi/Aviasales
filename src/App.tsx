@@ -1,29 +1,18 @@
 import React from 'react';
 
+import logo from './logo/Logo.svg';
 import './App.css';
+import TransferFilter from './components/TransferFilter/TransferFilter';
+import SectionTicket from './components/SectionTickets/SectionTickets';
 
 function App() {
   return (
-    <div>
-      <main>
-        <img src="/logo/Logo.svg" alt="logo" />
-        <section>
-          <aside></aside>
-          <div>
-            <ul>
-              <li>
-                <button>Самый дешевый</button>
-              </li>
-              <li>
-                <button>Самый быстрый</button>
-              </li>
-              <li>
-                <button>Оптимальный</button>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </main>
+    <div className="container">
+      <img src={logo} alt="logo" className="img-position" />
+      <section className="section-container">
+        <TransferFilter />
+        <SectionTicket />
+      </section>
     </div>
   );
 }

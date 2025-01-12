@@ -11,24 +11,29 @@
     "@types/node": "^22.10.1",
     "@types/react": "^18.3.13",
     "@types/react-dom": "^18.3.1",
+    "@types/react-redux": "^7.1.34",
     "antd": "^5.22.3",
+    "clsx": "^2.1.1",
     "cra-template-typescript": "1.2.0",
-    "date-fns": "^4.1.0",
     "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5"
+    "redux": "^5.0.1",
+    "sass": "^1.83.1",
+    "typescript": "^4.9.5",
+    "typescript-plugin-css-modules": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "prepare": "husky",
     "lint": "eslint ./src**/*.tsx",
     "lint:fix": "eslint ./src**/*.tsx --fix",
-    "format": "prettier --write ./src",
-    "prepare": "husky"
+    "format": "prettier --write ./src"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +56,7 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/eslint-parser": "^7.25.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "eslint": "^8.57.1",
@@ -63,7 +69,8 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
-    "prettier": "3.4.2"
+    "prettier": "3.4.2",
+    "typescript-eslint": "^8.19.1"
   },
   "husky": {
     "hooks": {

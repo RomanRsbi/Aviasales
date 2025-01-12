@@ -1,0 +1,55 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 232px;
+  height: 252px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 0px #0000001a;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.label {
+  display: inline-block;
+  width: 160px;
+  font-size: 13px;
+  color: #4a4a4a;
+  line-height: 20px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  padding: 10px 0 10px 5px;
+}
+
+.title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  padding: 20px 0 10px 20px;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  height: 40px;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.li:hover,
+.label:hover {
+  background: #f1fcff;
+  cursor: pointer;
+}
