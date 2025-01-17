@@ -2,7 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { actionCreators, SecondState } from '../../store';
+import { actionCreators } from '../../store';
+import { SecondState } from '../../store/actions';
 
 import classes from './TicketFilter.module.scss';
 

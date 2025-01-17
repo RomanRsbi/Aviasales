@@ -10,7 +10,6 @@ export default function TicketList() {
     <div className={classes.container}>
       <TicketFilter />
       <TicketsList />
-      <button className={classes.button}>Показать еще 5 билетов!</button>
     </div>
   );
 }

@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { actionCreators, State } from '../../store';
+import { actionCreators } from '../../store';
+import { State } from '../../store/actions';
 
 import classes from './TransferFilter.module.scss';
 
@@ -11,7 +12,6 @@ export default function TransferFilter() {
 
   const { clickOne, clickAll, deleteOne } = bindActionCreators(actionCreators, dispatch);
   const transferFilterArr = useSelector((state: State) => state.arrayFilter.filterArr);
-  // const btnActive = useSelector((state: State) => state.arrayFilter.btnActive);
 
   useEffect(() => {
     changeFilter();
